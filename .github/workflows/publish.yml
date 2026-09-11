@@ -1,0 +1,34 @@
+name: Publish Python Package
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  pypi-publish:
+    name: Build and publish to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/Antonio_AHD3RA1 # Cambia TU_PAQUETE por el nombre real
+    permissions:
+      id-token: write  # IMPORTANTE: Esto habilita la conexión segura con PyPI
+      contents: read
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Instalar herramientas de construcción
+        run: python3 -m pip install build --user
+
+      - name: Construir el paquete
+        run: python3 -m build
+
+      - name: Publicar en PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
