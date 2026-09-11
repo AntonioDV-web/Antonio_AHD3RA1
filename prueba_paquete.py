@@ -2,7 +2,6 @@ import src.Antonio_AHD3RA1.calculos as calculos
 import src.Antonio_AHD3RA1.validaciones as validaciones
 
 # Uso de funciones de 'calculos.py'
-"""
 notas = []
 print("----- Ingrese 3 notas para realizar calculos -----")
 
@@ -29,7 +28,7 @@ parte = float(input("Ingrese el valor de la parte: "))
 total = float(input("Ingrese el valor del total: "))
 print(f"El {parte}% de {total} es: {calculos.calcular_porcentaje(parte, total)}")
 print("-"* 50)
-"""
+
 
 # Uso de las funciones de 'Validaciones.py'
 
