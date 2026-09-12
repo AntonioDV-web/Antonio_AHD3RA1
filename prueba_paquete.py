@@ -1,5 +1,5 @@
-import src.Antonio_AHD3RA1.calculos as calculos
-import src.Antonio_AHD3RA1.validaciones as validaciones
+import Antonio_AHD3RA1.calculos as calculos
+import Antonio_AHD3RA1.validaciones as validaciones
 
 # Uso de funciones de 'calculos.py'
 notas = []

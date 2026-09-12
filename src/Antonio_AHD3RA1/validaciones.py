@@ -20,7 +20,7 @@ def texto_no_vacio(texto):
         return True
 # Comprobar si un número es mayor que cero y devolver True o False.
 def es_positivo(valor):
-    return 0 <= valor
+    return 0 < valor
 
 # Verificar que una nota se encuentre entre 0 y 100. Debe devolver True o False.
 def nota_valida(nota):
